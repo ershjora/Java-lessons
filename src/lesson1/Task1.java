@@ -8,6 +8,6 @@ public class Task1 {
         char r = 'r';
         char i = 'i';
 
-       
+        System.out.println(g);
     }
 }
