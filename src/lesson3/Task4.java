@@ -13,7 +13,7 @@ public class Task4 {
         System.out.println("Введите первое число");
         int firstNumber =scanner.nextInt();
         System.out.println("Введите второе число");
-        int secondNumber =scanner.nextInt();
+        int secondNumber = scanner.nextInt();
         if ((firstNumber % 2) == 0 && (firstNumber % 3) == 0) {
             if(Math.pow(firstNumber,secondNumber) > Integer.MAX_VALUE || Math.pow(firstNumber,secondNumber) < Integer.MIN_VALUE){
                 System.out.println("Результат выражения слишком большой!");
