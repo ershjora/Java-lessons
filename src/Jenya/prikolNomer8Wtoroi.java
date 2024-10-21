@@ -6,21 +6,22 @@ public class prikolNomer8Wtoroi {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите число: ");
-        int Number = scanner.nextInt();
-        int Degree = 0;
-        int Answer =0;
-        for (int i = 0; i < Number; ) {
-            if (Number !=1 && Number %2 ==0){
-                Answer= Number/=2;
-                Degree++;
-                if (Answer%2 !=0){
-                    System.out.println("Нет!");
-                }
-            }
-            else {
+        int number = scanner.nextInt();
+        int degree = 0;
+        int answer = 0;
+        for (int i = 0; ; ) {
+            if (number %2 ==0){
+                answer= number/=2;
+                degree++;
+
+
+            } else {
                 break;
             }
         }
-        System.out.println(Degree);
+        if (answer==1){
+            System.out.println(degree);
+        }
+        else System.out.println("Нет!");
     }
 }
